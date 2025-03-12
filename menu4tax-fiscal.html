@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Página de menu e links para Suite 4Tax-Fiscal, incluindo documentações, gravações, onbording e produtos.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu 4Tax-Fiscal</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f7fc;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      background-color: #263C7A;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 15px 30px;
+    }
+
+    .logo img {
+      width: 150px; 
+      height: auto;
+    }
+
+    header h2 {
+      text-align: center;
+      color: #fff;         
+      font-size: 44px;
+      font-weight: 600;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .grid-item {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-align: center;
+    }
+
+    .grid-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .grid-item h2 {
+      margin-bottom: 24px;
+      font-size: 22px;
+      color: #2d3748;
+      font-weight: 600;
+    }
+
+    .grid-item ul {
+      list-style: none;
+    }
+
+    .grid-item ul li {
+      margin: 15px 0;
+    }
+
+    .grid-item ul li a {
+      color: #3182ce;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 17px;
+      display: inline-block;
+      padding: 2px 2px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      border-radius: 4px;
+    }
+
+    .grid-item ul li a:hover {
+      background-color: #2d3748;
+      color: #ffffff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #263C7A;
+      color: #fff;
+      font-size: 14px;
+    }
+  
+    @media screen and (max-width: 600px) {
+      .grid-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .grid-item {
+        width: 90%;
+        max-width: 300px;
+      }
+      header h2 {
+        font-size: 28px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Se houver um logotipo, utilize a classe logo -->
+    <div class="logo">
+      <!-- <img src="SEU_LOGO.png" alt="Logo Seidor"> -->
+    </div>
+    <div><h2>Suite 4Tax-Fiscal</h2></div>
+    <div></div>
+  </header>
+
+  <main>
+    <section class="grid-container">
+
+      <div class="grid-item">
+        <h2>Documentações</h2>
+        <ul>
+          <li><a href="https://seidor.sharepoint.com/teams/Seidor4TaxBrasil/PROJETO_FISCAL/Forms/AllItems.aspx?csf=1&web=1&e=tvCqGq&CID=44b24ac1%2Dffe9%2D4770%2D94e1%2D2779a2bba178&FolderCTID=0x0120009B2B43DD84E7AE48A426734FD4BAF116&id=%2Fteams%2FSeidor4TaxBrasil%2FPROJETO%5FFISCAL%2FPROJETO%5FFISCAL%2F07%20%2D%20Modelos%20Cargas%20de%20Dados" target="_blank" rel="noopener">Modelos Cargas de Dados</a></li>
+          <li><a href="https://seidor.sharepoint.com/teams/Seidor4TaxBrasil/PROJETO_FISCAL/Forms/AllItems.aspx?csf=1&web=1&e=2DjNgO&CID=bc2bf255-ca1b-4bce-8f16-d79a75fd4b2c&FolderCTID=0x0120009B2B43DD84E7AE48A426734FD4BAF116&id=%2Fteams%2FSeidor4TaxBrasil%2FPROJETO_FISCAL%2FPROJETO_FISCAL%2F09+-+Templates" target="_blank" rel="noopener">Templates</a></li>
+          <li><a href="https://seidor.sharepoint.com/sites/SeidorBR/Documentos/Forms/AllItems.aspx" target="_blank" rel="noopener">Cliente X UTIL</a></li>
+          <li><a href="https://seidor.sharepoint.com/:f:/r/sites/SeidorBR/Documentos/PRODUTO%20-%20Operacao%20BR?csf=1&web=1&e=9A24qZ" target="_blank" rel="noopener">Produto Operação BR</a></li>
+        </ul>        
+      </div>
+
+      <div class="grid-item">
+        <h2>Gravações</h2>
+        <ul>
+          <li><a href="https://seidor.sharepoint.com/teams/Seidor4TaxBrasil/Gravaes%20VTAX/Forms/AllItems.aspx?csf=1&web=1&e=df6GOc&CID=63e6b58c%2Dcfbd%2D4433%2Dbc1f%2Dcacf4c99c587&FolderCTID=0x012000120C6FB8E721FB4E939977A4E642D539&id=%2Fteams%2FSeidor4TaxBrasil%2FGravaes%20VTAX%2FRepasse%20Projeto%20vs%20Sustenta%C3%A7%C3%A3o" target="_blank" rel="noopener">Repasse Projetos vs Sustentação</a></li>
+          <li><a href="https://seidor.sharepoint.com/teams/Seidor4TaxBrasil/Gravaes%20VTAX/Forms/AllItems.aspx?csf=1&web=1&e=0SDGSV&CID=4f7cf532%2Dbad6%2D457c%2Da56f%2D445230551dde&FolderCTID=0x012000120C6FB8E721FB4E939977A4E642D539&id=%2Fteams%2FSeidor4TaxBrasil%2FGravaes%20VTAX%2FTreinamentos%20VTAX" target="_blank" rel="noopener">Treinamentos</a></li>
+        </ul>
+      </div>
+
+      <div class="grid-item">
+        <h2>Onbording</h2>
+        <ul>
+          <li><a href="http://wiki.seidorbrasil.com.br/pt-br/SEIDOR_BR/PRODUTOS/4TAX_ON-PREMISE/VTAX/Interno/Incidentes" target="_blank" rel="noopener">Célula Incidentes</a></li>
+          <li><a href="http://wiki.seidorbrasil.com.br/pt-br/SEIDOR_BR/PRODUTOS/4TAX_ON-PREMISE/VTAX/Interno/Produto" target="_blank" rel="noopener">Célula Produtos</a></li>
+          <li><a href="http://wiki.seidorbrasil.com.br/pt-br/SEIDOR_BR/PRODUTOS/4TAX_ON-PREMISE/VTAX/Interno/Projetos" target="_blank" rel="noopener">Célula Projetos</a></li>
+          <li><a href="http://wiki.seidorbrasil.com.br/pt-br/SEIDOR_BR/PRODUTOS/4TAX_ON-PREMISE/VTAX/Interno/Manutencao" target="_blank" rel="noopener">Célula Sustentação</a></li>
+        </ul>        
+      </div>
+
+      <div class="grid-item">
+        <h2>Produto 4Tax-Fiscal</h2>
+        <ul>
+          <li><a href="https://teams.microsoft.com/l/app/f6405520-7907-4464-8f6e-9889e2fb7d8f?templateInstanceId=f390830b-0163-4749-9ee7-971a98214153&environment=bccfe53b-7233-eb41-909d-4191317fd04f" target="_blank" rel="noopener">Acesso ZOE</a></li>
+          <li><a href="https://seidor.sharepoint.com/teams/Seidor4TaxBrasil/" target="_blank" rel="noopener">Informativos</a></li>
+          <li><a href="https://app.powerbi.com/view?r=eyJrIjoiMGJhNmU5MzAtNjMwNC00YjgzLTkxOTctNjhlY2Q4YjA2ODg4IiwidCI6IjY1NDYyM2Q2LTE1MDQtNGYyMi1hMTQ2LWI3YzcyNjM3NzY2YSIsImMiOjh9" target="_blank" rel="noopener">Power BI Produto</a></li>
+          <li><a href="http://wiki.seidorbrasil.com.br/pt-br/SEIDOR_BR/PRODUTOS/4TAX_ON-PREMISE/VTAX/Releases" target="_blank" rel="noopener">Wiki - Reviews Sprints</a></li>
+        </ul>        
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Menu 4Tax-Fiscal. Todos os direitos reservados.</p>
+    <p>&copy; Jonatas Oliveira</p>
+  </footer>
+
+</body>
+</html>
